@@ -1,13 +1,18 @@
-html, body {
- height: 100vh;
- font-family: 'Permanent Marker', cursive;
+html,
+body {
+    height: 100vh;
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 100px;
 }
+
 .background-image {
-position: relative;
-display: block;
-margin: auto;
-margin-top: -60px;
+    height: 700px;
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 80px;
 }
+
 .col-lg-6 {
     overflow: hidden;
 }
@@ -24,19 +29,23 @@ margin-top: -60px;
     margin: auto;
     height: 400px;
 }
+
 .record-player-object {
     position: relative;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
+    margin-top: 80px;
 }
+
 .record-player {
     margin: auto;
     height: 700px;
     width: 700px;
     position: relative;
 }
+
 .record {
     -webkit-animation: rotation 5s infinite linear;
     -webkit-animation-delay: 6s;
@@ -48,13 +57,14 @@ margin-top: -60px;
 }
 
 @-webkit-keyframes rotation {
-		from {
-				-webkit-transform: rotate(0deg);
-		}
-		to {
-				-webkit-transform: rotate(359deg);
-		}
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
 }
+
 .arm {
     position: absolute;
     height: 300px;
@@ -65,21 +75,24 @@ margin-top: -60px;
     -webkit-animation: swivel 3s linear forwards;
     -webkit-animation-delay: 2s;
 }
+
 @-webkit-keyframes swivel {
     from {
-            -webkit-transform: rotate(-35deg);
+        -webkit-transform: rotate(-35deg);
     }
     to {
-            -webkit-transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
     }
 }
+
 .record-image {
     border-radius: 50%;
     position: absolute;
     height: 185px;
-    top: 160px;    
+    top: 160px;
     left: 160px;
 }
+
 img {
     height: 100%;
 }
