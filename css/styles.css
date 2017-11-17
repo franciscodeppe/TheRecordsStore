@@ -1,0 +1,55 @@
+.container {
+    position: fixed;
+    left: 35%;
+
+}
+.record-player {
+    position: absolute;
+    height: 500px;
+}
+.record {
+    -webkit-animation: rotation 5s infinite linear;
+    -webkit-animation-delay: 6s;
+    position: absolute;
+    height: 380px;
+    width: 380px;
+    left: 15px;
+    top: 32px;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+.arm {
+    position: absolute;
+    height: 250px;
+    left: 285px;
+    top: 50px;
+    transform-origin: 75% 25%;
+    transform: rotate(-35deg);
+    -webkit-animation: swivel 3s linear forwards;
+    -webkit-animation-delay: 2s;
+}
+@-webkit-keyframes swivel {
+    from {
+            -webkit-transform: rotate(-35deg);
+    }
+    to {
+            -webkit-transform: rotate(-10deg);
+    }
+}
+.record-image {
+    border-radius: 50%;
+    position: absolute;
+    height: 130px;
+    top: 127px;
+    left: 127px;
+}
+img {
+    height: 100%;
+}
