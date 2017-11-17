@@ -1,20 +1,50 @@
-.container {
-    position: fixed;
-    left: 35%;
+html, body {
+ height: 100vh;
+ font-family: 'Permanent Marker', cursive;
+}
+.background-image {
+position: relative;
+display: block;
+margin: auto;
+margin-top: -60px;
+}
+.col-lg-6 {
+    overflow: hidden;
+}
 
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    background-color: white;
+}
+
+.album-image {
+    margin: auto;
+    height: 400px;
+}
+.record-player-object {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 .record-player {
-    position: absolute;
-    height: 500px;
+    margin: auto;
+    height: 700px;
+    width: 700px;
+    position: relative;
 }
 .record {
     -webkit-animation: rotation 5s infinite linear;
     -webkit-animation-delay: 6s;
     position: absolute;
-    height: 380px;
-    width: 380px;
-    left: 15px;
-    top: 32px;
+    height: 520px;
+    width: 520px;
+    left: 20px;
+    top: 25px;
 }
 
 @-webkit-keyframes rotation {
@@ -27,9 +57,9 @@
 }
 .arm {
     position: absolute;
-    height: 250px;
-    left: 285px;
-    top: 50px;
+    height: 300px;
+    left: 430px;
+    top: 60px;
     transform-origin: 75% 25%;
     transform: rotate(-35deg);
     -webkit-animation: swivel 3s linear forwards;
@@ -46,9 +76,9 @@
 .record-image {
     border-radius: 50%;
     position: absolute;
-    height: 130px;
-    top: 127px;
-    left: 127px;
+    height: 185px;
+    top: 160px;    
+    left: 160px;
 }
 img {
     height: 100%;
